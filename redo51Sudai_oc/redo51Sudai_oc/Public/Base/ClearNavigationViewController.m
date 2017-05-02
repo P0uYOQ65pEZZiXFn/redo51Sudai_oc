@@ -1,0 +1,84 @@
+//
+//  ClearNavigationViewController.m
+//  redo51Sudai_oc
+//
+//  Created by ZhongLiangLiang on 17/5/2.
+//  Copyright © 2017年 zhongliangliang. All rights reserved.
+//
+
+#import "ClearNavigationViewController.h"
+
+@interface ClearNavigationViewController ()
+
+/** 导航条View */
+@property (nonatomic, weak) UIView *navBarView;
+
+@end
+
+@implementation ClearNavigationViewController
+
+//导航栏没有颜色
+- (UIView *)navBarView {
+    if (!_navBarView) {
+        UIView *navBarView = [[UIView alloc] init];
+        navBarView.frame = CGRectMake(0, 0, ZWIN_WIDTH, 64);
+        [self.view addSubview:navBarView];
+        self.navBarView = navBarView;
+    }
+    return _navBarView;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
+    
+    if (self.navigationController.viewControllers.count != 1) {
+        UIButton *button = [[UIButton alloc]init];
+        button.frame = ZRECTMAKE(0, 0, 11, 20);
+        [button setImage:[UIImage imageNamed:@"close_order"] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(back_action:) forControlEvents:UIControlEventTouchUpInside];
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+    }
+    NSString *selfClass = NSStringFromClass([self class]);
+    NSLog(@"进入%@",selfClass);
+}
+
+//返回上一界面
+- (void)back_action:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+    if (_back_action) {
+        _back_action();
+    }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    NSString *selfClass = NSStringFromClass([self class]);
+    NSLog(@"退出%@",selfClass);
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //去掉分割线
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

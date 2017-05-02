@@ -13,6 +13,13 @@
 		4D05FDA31EB8892F00E468C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D05FDA11EB8892F00E468C6 /* Main.storyboard */; };
 		4D05FDA51EB8892F00E468C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D05FDA41EB8892F00E468C6 /* Assets.xcassets */; };
 		4D05FDA81EB8892F00E468C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D05FDA61EB8892F00E468C6 /* LaunchScreen.storyboard */; };
+		4DE6C55C1EB88F3A00251667 /* UIColor+hexadecimal_16.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C55B1EB88F3A00251667 /* UIColor+hexadecimal_16.m */; };
+		4DE6C5601EB88FBB00251667 /* HasNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C55F1EB88FBB00251667 /* HasNavigationViewController.m */; };
+		4DE6C5631EB88FF800251667 /* ClearNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5621EB88FF800251667 /* ClearNavigationViewController.m */; };
+		4DE6C5661EB8901E00251667 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5651EB8901E00251667 /* UIImage+Color.m */; };
+		4DE6C56A1EB8930E00251667 /* CallImageSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5691EB8930E00251667 /* CallImageSingleton.m */; };
+		4DE6C56D1EB8937900251667 /* AccountSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C56C1EB8937900251667 /* AccountSingleton.m */; };
+		4DE6C5741EB8941200251667 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5731EB8941200251667 /* Account.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,22 @@
 		4D05FDA41EB8892F00E468C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D05FDA71EB8892F00E468C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D05FDA91EB8892F00E468C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE6C5571EB88D6800251667 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		4DE6C5581EB88D8100251667 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4DE6C55A1EB88F3A00251667 /* UIColor+hexadecimal_16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hexadecimal_16.h"; sourceTree = "<group>"; };
+		4DE6C55B1EB88F3A00251667 /* UIColor+hexadecimal_16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hexadecimal_16.m"; sourceTree = "<group>"; };
+		4DE6C55E1EB88FBB00251667 /* HasNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasNavigationViewController.h; sourceTree = "<group>"; };
+		4DE6C55F1EB88FBB00251667 /* HasNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasNavigationViewController.m; sourceTree = "<group>"; };
+		4DE6C5611EB88FF800251667 /* ClearNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearNavigationViewController.h; sourceTree = "<group>"; };
+		4DE6C5621EB88FF800251667 /* ClearNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearNavigationViewController.m; sourceTree = "<group>"; };
+		4DE6C5641EB8901E00251667 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		4DE6C5651EB8901E00251667 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		4DE6C5681EB8930E00251667 /* CallImageSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallImageSingleton.h; sourceTree = "<group>"; };
+		4DE6C5691EB8930E00251667 /* CallImageSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallImageSingleton.m; sourceTree = "<group>"; };
+		4DE6C56B1EB8937900251667 /* AccountSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSingleton.h; sourceTree = "<group>"; };
+		4DE6C56C1EB8937900251667 /* AccountSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSingleton.m; sourceTree = "<group>"; };
+		4DE6C5721EB8941200251667 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		4DE6C5731EB8941200251667 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +86,7 @@
 				4D05FD9E1EB8892F00E468C6 /* ViewController.h */,
 				4D05FD9F1EB8892F00E468C6 /* ViewController.m */,
 				4D05FDA11EB8892F00E468C6 /* Main.storyboard */,
+				4DE6C5561EB88D5600251667 /* Public */,
 				4D05FDA41EB8892F00E468C6 /* Assets.xcassets */,
 				4D05FDA61EB8892F00E468C6 /* LaunchScreen.storyboard */,
 				4D05FDA91EB8892F00E468C6 /* Info.plist */,
@@ -77,6 +101,61 @@
 				4D05FD991EB8892F00E468C6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DE6C5561EB88D5600251667 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				4DE6C5571EB88D6800251667 /* Header.h */,
+				4DE6C5581EB88D8100251667 /* PrefixHeader.pch */,
+				4DE6C56E1EB893EC00251667 /* Account */,
+				4DE6C5671EB892D800251667 /* Singleton */,
+				4DE6C55D1EB88F9500251667 /* Base */,
+				4DE6C5591EB88F1D00251667 /* UIColor+hexadecimal_16 */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		4DE6C5591EB88F1D00251667 /* UIColor+hexadecimal_16 */ = {
+			isa = PBXGroup;
+			children = (
+				4DE6C55A1EB88F3A00251667 /* UIColor+hexadecimal_16.h */,
+				4DE6C55B1EB88F3A00251667 /* UIColor+hexadecimal_16.m */,
+			);
+			path = "UIColor+hexadecimal_16";
+			sourceTree = "<group>";
+		};
+		4DE6C55D1EB88F9500251667 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4DE6C55E1EB88FBB00251667 /* HasNavigationViewController.h */,
+				4DE6C55F1EB88FBB00251667 /* HasNavigationViewController.m */,
+				4DE6C5611EB88FF800251667 /* ClearNavigationViewController.h */,
+				4DE6C5621EB88FF800251667 /* ClearNavigationViewController.m */,
+				4DE6C5641EB8901E00251667 /* UIImage+Color.h */,
+				4DE6C5651EB8901E00251667 /* UIImage+Color.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4DE6C5671EB892D800251667 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				4DE6C5681EB8930E00251667 /* CallImageSingleton.h */,
+				4DE6C5691EB8930E00251667 /* CallImageSingleton.m */,
+				4DE6C56B1EB8937900251667 /* AccountSingleton.h */,
+				4DE6C56C1EB8937900251667 /* AccountSingleton.m */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		4DE6C56E1EB893EC00251667 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				4DE6C5721EB8941200251667 /* Account.h */,
+				4DE6C5731EB8941200251667 /* Account.m */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE6C5631EB88FF800251667 /* ClearNavigationViewController.m in Sources */,
+				4DE6C56A1EB8930E00251667 /* CallImageSingleton.m in Sources */,
 				4D05FDA01EB8892F00E468C6 /* ViewController.m in Sources */,
+				4DE6C5741EB8941200251667 /* Account.m in Sources */,
+				4DE6C56D1EB8937900251667 /* AccountSingleton.m in Sources */,
+				4DE6C5661EB8901E00251667 /* UIImage+Color.m in Sources */,
+				4DE6C5601EB88FBB00251667 /* HasNavigationViewController.m in Sources */,
 				4D05FD9D1EB8892F00E468C6 /* AppDelegate.m in Sources */,
+				4DE6C55C1EB88F3A00251667 /* UIColor+hexadecimal_16.m in Sources */,
 				4D05FD9A1EB8892F00E468C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 575RLG9KN6;
+				GCC_PREFIX_HEADER = redo51Sudai_oc/Public/PrefixHeader.pch;
 				INFOPLIST_FILE = redo51Sudai_oc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ZhongLiangliang.redo51Sudai-oc";
@@ -286,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 575RLG9KN6;
+				GCC_PREFIX_HEADER = redo51Sudai_oc/Public/PrefixHeader.pch;
 				INFOPLIST_FILE = redo51Sudai_oc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ZhongLiangliang.redo51Sudai-oc";
@@ -312,6 +400,7 @@
 				4D05FDAE1EB8892F00E468C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,78 @@
+//
+//  PrefixHeader.pch
+//  redo51Sudai_oc
+//
+//  Created by ZhongLiangLiang on 17/5/2.
+//  Copyright © 2017年 zhongliangliang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+/*
+ 常用设置常量
+ */
+
+#import "Header.h"
+
+// !!!: √ 屏幕大小
+#define ZWINFRAME [UIScreen mainScreen].bounds
+
+// !!!: √ 屏幕大小的宽和高
+#define ZWIN_WIDTH ZWINFRAME.size.width
+#define ZWIN_HEIGHT ZWINFRAME.size.height
+
+// !!!: √ 主要圆角  下一步按钮  登录、注册的文本框  获取验证码按钮
+#define Radius 3
+
+// !!!: √ 颜色设定RGB
+#define ZRGB_COLOR(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+// !!!: √ 颜色设定RGB
+#define ZRGB_COLOR_NOA(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1]
+
+// !!!: √ 16进制颜色设定
+#define ZRGB_COLOR_16(color) [UIColor colorWith16String:[NSString stringWithFormat:@"%@",color]]
+
+// !!!: √ 主色
+#define MainColor ZRGB_COLOR_16(@"#2f74ff")
+
+// !!!: √ 字体大小
+#define ZWORD_FONT(size) [UIFont systemFontOfSize:size]
+
+// !!!: √ 加粗字体大小
+#define ZWORD_B_FONT(size) [UIFont boldSystemFontOfSize:size]
+
+// !!!: √ 控件设定位置
+#define ZRECTMAKE(x,y,w,h) CGRectMake(x, y, w, h)
+
+// !!!: √ 控件设定大小
+#define ZSIZEMAKE(w,h) CGSizeMake(w, h)
+
+// !!!: √ 系统版本号
+#define SYSTEM_VERSION ([[[UIDevice currentDevice] systemVersion] floatValue])
+
+// !!!: √ 当前版本号
+#define CURRENT_VERSION ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"])
+
+// !!!: √ 打印＋方法和行数
+#define Log(...) NSLog(@"\n当前类:%@ 方法:%s 行数:%d \n%@ 。\n\n", self,__func__, __LINE__, [NSString stringWithFormat:__VA_ARGS__])  //打印 调试自定义
+
+// !!!: √ 打印－－可以转换中文，转换
+#define CLog(...) NSLog(@"%@", [NSString stringWithFormat:__VA_ARGS__])
+
+
+/////////////////////////UserDefaluts本地化//////////////////////////////////
+// !!!: √ 保存 UserDefaults
+#define USER_DEFAULTS_SET(key, value) [[NSUserDefaults standardUserDefaults] setObject:value forKey:key];\
+[[NSUserDefaults standardUserDefaults] synchronize]
+// !!!: √ 获取 UserDefaults
+#define USER_DEFAULTS_GET(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
+// !!!: √ 移除 UserDefaults
+#define USER_DEFAULTS_REMOVE(key) [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];\
+[[NSUserDefaults standardUserDefaults] synchronize]
