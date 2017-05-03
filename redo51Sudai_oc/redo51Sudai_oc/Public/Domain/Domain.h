@@ -75,4 +75,16 @@
  */
 - (void)showAlertSystem:(UIViewController *)vc andTitle:(NSString *)title andMessage:(NSString *)message andIsCancel:(BOOL)isCancel;
 
+
+@end
+
+@interface ConvertUtil : NSObject
+
+/*数据转换类型*/
++ (NSString *)toString:(id)obj;
+
++ (NSInteger)toInt:(id)obj;
+
++ (CGFloat)toFloat:(id)obj;
+
 @end

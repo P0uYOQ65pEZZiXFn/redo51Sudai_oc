@@ -23,6 +23,9 @@
 		4DE6C5781EB9700D00251667 /* Domain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5771EB9700D00251667 /* Domain.m */; };
 		4DE6C57B1EB970E600251667 /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C57A1EB970E600251667 /* HUD.m */; };
 		4DE6C57E1EB971A700251667 /* Regular.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C57D1EB971A700251667 /* Regular.m */; };
+		4DE6C5821EB9864C00251667 /* Config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4DE6C5811EB9864C00251667 /* Config.xml */; };
+		4DE6C5851EB986BC00251667 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5841EB986BC00251667 /* Config.m */; };
+		4DE6C5891EB9AB5D00251667 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5881EB9AB5D00251667 /* TBXML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,11 @@
 		4DE6C57A1EB970E600251667 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
 		4DE6C57C1EB971A700251667 /* Regular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Regular.h; sourceTree = "<group>"; };
 		4DE6C57D1EB971A700251667 /* Regular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Regular.m; sourceTree = "<group>"; };
+		4DE6C5811EB9864C00251667 /* Config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Config.xml; sourceTree = "<group>"; };
+		4DE6C5831EB986BC00251667 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		4DE6C5841EB986BC00251667 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		4DE6C5871EB9AB5D00251667 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		4DE6C5881EB9AB5D00251667 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 		4D05FD8C1EB8892F00E468C6 = {
 			isa = PBXGroup;
 			children = (
+				4DE6C5811EB9864C00251667 /* Config.xml */,
 				4D05FD971EB8892F00E468C6 /* redo51Sudai_oc */,
 				4D05FD961EB8892F00E468C6 /* Products */,
 			);
@@ -117,6 +126,9 @@
 			children = (
 				4DE6C5571EB88D6800251667 /* Header.h */,
 				4DE6C5581EB88D8100251667 /* PrefixHeader.pch */,
+				4DE6C5831EB986BC00251667 /* Config.h */,
+				4DE6C5841EB986BC00251667 /* Config.m */,
+				4DE6C5861EB9AB5D00251667 /* TBXML */,
 				4DE6C5751EB96FE800251667 /* Domain */,
 				4DE6C56E1EB893EC00251667 /* Account */,
 				4DE6C5671EB892D800251667 /* Singleton */,
@@ -181,6 +193,15 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		4DE6C5861EB9AB5D00251667 /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				4DE6C5871EB9AB5D00251667 /* TBXML.h */,
+				4DE6C5881EB9AB5D00251667 /* TBXML.m */,
+			);
+			path = TBXML;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,6 +264,7 @@
 				4D05FDA81EB8892F00E468C6 /* LaunchScreen.storyboard in Resources */,
 				4D05FDA51EB8892F00E468C6 /* Assets.xcassets in Resources */,
 				4D05FDA31EB8892F00E468C6 /* Main.storyboard in Resources */,
+				4DE6C5821EB9864C00251667 /* Config.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,10 +278,12 @@
 				4DE6C5631EB88FF800251667 /* ClearNavigationViewController.m in Sources */,
 				4DE6C56A1EB8930E00251667 /* CallImageSingleton.m in Sources */,
 				4D05FDA01EB8892F00E468C6 /* ViewController.m in Sources */,
+				4DE6C5891EB9AB5D00251667 /* TBXML.m in Sources */,
 				4DE6C5741EB8941200251667 /* Account.m in Sources */,
 				4DE6C56D1EB8937900251667 /* AccountSingleton.m in Sources */,
 				4DE6C5781EB9700D00251667 /* Domain.m in Sources */,
 				4DE6C5661EB8901E00251667 /* UIImage+Color.m in Sources */,
+				4DE6C5851EB986BC00251667 /* Config.m in Sources */,
 				4DE6C57E1EB971A700251667 /* Regular.m in Sources */,
 				4DE6C5601EB88FBB00251667 /* HasNavigationViewController.m in Sources */,
 				4D05FD9D1EB8892F00E468C6 /* AppDelegate.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Config.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *string = [Config shareInstance].imageUrl;
+    NSLog(@"%@",string);
+    
+    NSString *domString = [Config_Dom shareInstance].imageUrl;
+    NSLog(@"%@",domString);
 }
 
 

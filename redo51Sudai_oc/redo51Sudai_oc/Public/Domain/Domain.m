@@ -39,7 +39,7 @@
     NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     NSError *err;
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err];
-    if(err) {
+    if (err) {
         NSLog(@"JSON格式的字符串转换成字典 - json解析失败：%@",err);
         return nil;
     }
@@ -90,7 +90,6 @@
     return size;
 }
 
-
 /**
  alertView 提示框
  
@@ -117,6 +116,54 @@
             [vc presentViewController:alertController animated:YES completion:nil];
         });
     });
+}
+
+@end
+
+
+@implementation ConvertUtil
+
+
+// 转换String
++ (NSString *)toString:(id)obj {
+    if (obj != nil) {
+        if ([obj isKindOfClass:[NSNumber class]]) {
+            return [obj stringValue];
+        }
+        else if ([obj isKindOfClass:[NSString class]]) {
+            return [NSString stringWithFormat:@"%@",obj];
+        }
+    }
+    return @"";
+}
+
++ (NSInteger)toInt:(id)obj {
+    if (obj != nil) {
+        if ([obj isKindOfClass:[NSNumber class]]) {
+            return [obj integerValue];
+        }
+        else if ([obj isKindOfClass:[NSString class]]) {
+            if ([obj stringValue].length == 0) {
+                return 0;
+            }
+        }
+        return (NSInteger)[obj stringValue];
+    }
+    return 0;
+}
+
++ (CGFloat)toFloat:(id)obj {
+    CGFloat tmp = 0.0;
+    if (obj != nil) {
+        if ([obj isKindOfClass:[NSNumber class]]) {
+            return [obj floatValue];
+        }
+        else if ([obj isKindOfClass:[NSString class]]) {
+            NSString *string = [NSString stringWithFormat:@"%@",obj];
+            return [string floatValue];
+        }
+    }
+    return tmp;
 }
 
 @end

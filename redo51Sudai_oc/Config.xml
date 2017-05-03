@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 打包的时候只需要修改 runtime 值指定使用哪个服务器 -->
+<App runtime = "release">
+    <runtime name = "debug">
+        <serverUrl>http://192.168.1.6/hmservices/</serverUrl>
+        <imageUrl>http://192.168.1.6/HMIMAGE/</imageUrl>
+    </runtime>
+    <runtime name = "release">
+        <serverUrl>http://api.weiyou.biz/</serverUrl>
+        <imageUrl>http://img.weiyou.biz/</imageUrl>
+    </runtime>
+</App>
