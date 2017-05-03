@@ -57,6 +57,24 @@
     }
 }
 
+// MARK: storyBoard之间的跳转
+- (UIStoryboard *)getUIStoryBoard:(NSString *)storyBoardName {
+    return [UIStoryboard storyboardWithName:storyBoardName bundle:[NSBundle mainBundle]];
+}
+
+- (UIViewController *)getUIViewController:(UIStoryboard *)storyBoard controllerIdentifier:(NSString *)controllerIdentifier {
+    return [storyBoard instantiateViewControllerWithIdentifier:controllerIdentifier];
+}
+
+- (UIViewController *)storyBoardNavigationPush:(NSString *)storyBoardName controllerIdentifier:(NSString *)controllerIdentifier settingBlockPushVC:(void(^)(UIViewController *vc))settingBlockPushVC {
+    UIStoryboard *storyBoard = [self getUIStoryBoard:storyBoardName];
+    UIViewController *pushViewController = [self getUIViewController:storyBoard controllerIdentifier:controllerIdentifier];
+    settingBlockPushVC(pushViewController);
+    [self.navigationController pushViewController:pushViewController animated:YES];
+    return pushViewController;
+}
+
+
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     NSString *selfClass = NSStringFromClass([self class]);

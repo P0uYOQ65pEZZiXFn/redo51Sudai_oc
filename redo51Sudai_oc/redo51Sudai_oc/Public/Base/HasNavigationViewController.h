@@ -13,4 +13,11 @@
 //返回按钮触发事件
 @property (nonatomic, copy) void (^back_action)();
 
+// MARK: storyBoard之间的跳转
+- (UIStoryboard *)getUIStoryBoard:(NSString *)storyBoardName;
+
+- (UIViewController *)getUIViewController:(UIStoryboard *)storyBoard controllerIdentifier:(NSString *)controllerIdentifier;
+
+- (UIViewController *)storyBoardNavigationPush:(NSString *)storyBoardName controllerIdentifier:(NSString *)controllerIdentifier settingBlockPushVC:(void(^)(UIViewController *vc))settingBlockPushVC;
+
 @end
