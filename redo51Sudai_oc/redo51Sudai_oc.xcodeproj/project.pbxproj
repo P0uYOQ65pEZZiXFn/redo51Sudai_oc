@@ -20,6 +20,9 @@
 		4DE6C56A1EB8930E00251667 /* CallImageSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5691EB8930E00251667 /* CallImageSingleton.m */; };
 		4DE6C56D1EB8937900251667 /* AccountSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C56C1EB8937900251667 /* AccountSingleton.m */; };
 		4DE6C5741EB8941200251667 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5731EB8941200251667 /* Account.m */; };
+		4DE6C5781EB9700D00251667 /* Domain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5771EB9700D00251667 /* Domain.m */; };
+		4DE6C57B1EB970E600251667 /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C57A1EB970E600251667 /* HUD.m */; };
+		4DE6C57E1EB971A700251667 /* Regular.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C57D1EB971A700251667 /* Regular.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,12 @@
 		4DE6C56C1EB8937900251667 /* AccountSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSingleton.m; sourceTree = "<group>"; };
 		4DE6C5721EB8941200251667 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		4DE6C5731EB8941200251667 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		4DE6C5761EB9700D00251667 /* Domain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		4DE6C5771EB9700D00251667 /* Domain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Domain.m; sourceTree = "<group>"; };
+		4DE6C5791EB970E600251667 /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		4DE6C57A1EB970E600251667 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
+		4DE6C57C1EB971A700251667 /* Regular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Regular.h; sourceTree = "<group>"; };
+		4DE6C57D1EB971A700251667 /* Regular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Regular.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +117,7 @@
 			children = (
 				4DE6C5571EB88D6800251667 /* Header.h */,
 				4DE6C5581EB88D8100251667 /* PrefixHeader.pch */,
+				4DE6C5751EB96FE800251667 /* Domain */,
 				4DE6C56E1EB893EC00251667 /* Account */,
 				4DE6C5671EB892D800251667 /* Singleton */,
 				4DE6C55D1EB88F9500251667 /* Base */,
@@ -156,6 +166,19 @@
 				4DE6C5731EB8941200251667 /* Account.m */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		4DE6C5751EB96FE800251667 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4DE6C5761EB9700D00251667 /* Domain.h */,
+				4DE6C5771EB9700D00251667 /* Domain.m */,
+				4DE6C5791EB970E600251667 /* HUD.h */,
+				4DE6C57A1EB970E600251667 /* HUD.m */,
+				4DE6C57C1EB971A700251667 /* Regular.h */,
+				4DE6C57D1EB971A700251667 /* Regular.m */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +258,12 @@
 				4D05FDA01EB8892F00E468C6 /* ViewController.m in Sources */,
 				4DE6C5741EB8941200251667 /* Account.m in Sources */,
 				4DE6C56D1EB8937900251667 /* AccountSingleton.m in Sources */,
+				4DE6C5781EB9700D00251667 /* Domain.m in Sources */,
 				4DE6C5661EB8901E00251667 /* UIImage+Color.m in Sources */,
+				4DE6C57E1EB971A700251667 /* Regular.m in Sources */,
 				4DE6C5601EB88FBB00251667 /* HasNavigationViewController.m in Sources */,
 				4D05FD9D1EB8892F00E468C6 /* AppDelegate.m in Sources */,
+				4DE6C57B1EB970E600251667 /* HUD.m in Sources */,
 				4DE6C55C1EB88F3A00251667 /* UIColor+hexadecimal_16.m in Sources */,
 				4D05FD9A1EB8892F00E468C6 /* main.m in Sources */,
 			);

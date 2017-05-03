@@ -12,5 +12,7 @@
 #import "UIImage+Color.h"
 #import "UIColor+hexadecimal_16.h"
 #import "Account.h"
+#import "Domain.h"
+#import "HUD.h"
 
 #endif /* Header_h */
