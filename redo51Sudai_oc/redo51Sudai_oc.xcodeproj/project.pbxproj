@@ -26,6 +26,7 @@
 		4DE6C5821EB9864C00251667 /* Config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4DE6C5811EB9864C00251667 /* Config.xml */; };
 		4DE6C5851EB986BC00251667 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5841EB986BC00251667 /* Config.m */; };
 		4DE6C5891EB9AB5D00251667 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5881EB9AB5D00251667 /* TBXML.m */; };
+		4DE6C5951EB9DD5F00251667 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE6C5941EB9DD5F00251667 /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		4DE6C5841EB986BC00251667 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		4DE6C5871EB9AB5D00251667 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		4DE6C5881EB9AB5D00251667 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		4DE6C5931EB9DD5F00251667 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		4DE6C5941EB9DD5F00251667 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 				4D05FD9C1EB8892F00E468C6 /* AppDelegate.m */,
 				4D05FD9E1EB8892F00E468C6 /* ViewController.h */,
 				4D05FD9F1EB8892F00E468C6 /* ViewController.m */,
+				4DE6C58E1EB9D2BF00251667 /* BaseDB */,
 				4D05FDA11EB8892F00E468C6 /* Main.storyboard */,
 				4DE6C5561EB88D5600251667 /* Public */,
 				4D05FDA41EB8892F00E468C6 /* Assets.xcassets */,
@@ -202,6 +206,15 @@
 			path = TBXML;
 			sourceTree = "<group>";
 		};
+		4DE6C58E1EB9D2BF00251667 /* BaseDB */ = {
+			isa = PBXGroup;
+			children = (
+				4DE6C5931EB9DD5F00251667 /* DBManager.h */,
+				4DE6C5941EB9DD5F00251667 /* DBManager.m */,
+			);
+			path = BaseDB;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,6 +295,7 @@
 				4DE6C5741EB8941200251667 /* Account.m in Sources */,
 				4DE6C56D1EB8937900251667 /* AccountSingleton.m in Sources */,
 				4DE6C5781EB9700D00251667 /* Domain.m in Sources */,
+				4DE6C5951EB9DD5F00251667 /* DBManager.m in Sources */,
 				4DE6C5661EB8901E00251667 /* UIImage+Color.m in Sources */,
 				4DE6C5851EB986BC00251667 /* Config.m in Sources */,
 				4DE6C57E1EB971A700251667 /* Regular.m in Sources */,

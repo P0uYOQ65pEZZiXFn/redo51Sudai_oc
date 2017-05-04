@@ -139,13 +139,10 @@ static Config_Dom *share_d = nil;
         TBXML *tbXML = [TBXML newTBXMLWithXMLData:data error:nil];
         //4.根元素
         TBXMLElement *rootElement = tbXML.rootXMLElement;
-        
         //5.得到根元素的值
         NSString *debug = [TBXML valueOfAttributeNamed:@"runtime" forElement:rootElement];
-    
         //5.得到某个元素的子元素
         TBXMLElement *serverElement = [TBXML childElementNamed:@"runtime" parentElement:rootElement];
-    
         //使用循环进行遍历
         while (serverElement) {
             //name
@@ -160,7 +157,6 @@ static Config_Dom *share_d = nil;
                 self.imageUrl = imageUrl;
                 self.serverUrl = serverUrl;
             }
-
             //得到下一个子元素(runtime)
             //得到同级或相临的子元素
             serverElement = [TBXML nextSiblingNamed:@"runtime" searchFromElement:serverElement];
