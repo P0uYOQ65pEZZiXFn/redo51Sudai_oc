@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "Config.h"
+#import "Http.h"
+#import "ADView.h"
 
 @interface ViewController ()
 
@@ -18,11 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSString *string = [Config shareInstance].imageUrl;
-    NSLog(@"%@",string);
-    
-    NSString *domString = [Config_Dom shareInstance].imageUrl;
-    NSLog(@"%@",domString);
+    CGFloat scale_screen = [UIScreen mainScreen].scale;
+    NSString *widthHeightString = [NSString stringWithFormat:@"%.0f-%.0f",ZWIN_WIDTH * scale_screen, ZWIN_HEIGHT * scale_screen];
+    NSDictionary *dic = @{@"resolution" : widthHeightString};
+    [Http get:ADUrl params:dic isHud:YES success:^(NSDictionary *data) {
+        NSArray *arr = data[@"urlList"];
+        if (arr.count != 0) {
+            NSString *urlString = arr[0];
+            [ADView createAdView:urlString isUrl:YES];
+        }
+        
+    } failure:^(NSString *failure) {
+        
+    }];
 }
 
 

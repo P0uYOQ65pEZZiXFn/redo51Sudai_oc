@@ -29,6 +29,11 @@
  */
 + (id)getToken;
 
+//获取当前时间戳
++ (NSString *)currentTimeStamp;
+
++ (NSString *)sginaWithTimeStamp:(NSString*)timeStamp;
+
 /**
  把格式化的JSON格式的字符串转换成字典
  

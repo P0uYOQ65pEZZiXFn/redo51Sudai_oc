@@ -15,6 +15,7 @@
 
 @property (nonatomic, copy) NSString *userName; //用户名
 @property (nonatomic, copy) NSString *userId;   //用户Id
+@property(nonatomic,copy) NSString *oauthToken; //用户令牌
 
 + (AccountSingleton *)shareInstance;
 

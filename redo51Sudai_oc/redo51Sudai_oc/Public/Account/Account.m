@@ -10,8 +10,19 @@
 
 @implementation Account
 
+NSString *const appKey = @"CB2275A3529121C61D071C627C261223";
+
+NSString *const appSecret = @"529121C61D071C62";
+
+
+//广告url;
+NSString *const ADUrl = @"app/index/activities.action";
+
 NSString *const UserDefaults_userName = @"userName";
 
 NSString *const UserDefaults_userId = @"userId";
+
+
+
 
 @end

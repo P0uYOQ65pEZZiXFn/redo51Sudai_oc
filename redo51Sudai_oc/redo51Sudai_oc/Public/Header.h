@@ -14,5 +14,7 @@
 #import "Account.h"
 #import "Domain.h"
 #import "HUD.h"
+#import "Config.h"
+#import "UIImageView+WebCache.h"
 
 #endif /* Header_h */

@@ -10,6 +10,17 @@
 
 @interface Account : NSObject
 
+extern NSString *const appKey;
+
+extern NSString *const appSecret;
+
+
+//广告url
+extern NSString *const ADUrl;
+
+
+
+
 extern NSString *const UserDefaults_userName;
 
 extern NSString *const UserDefaults_userId;
