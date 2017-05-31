@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    // 根据网络请求，设置启动广告
     CGFloat scale_screen = [UIScreen mainScreen].scale;
     NSString *widthHeightString = [NSString stringWithFormat:@"%.0f-%.0f",ZWIN_WIDTH * scale_screen, ZWIN_HEIGHT * scale_screen];
     NSDictionary *dic = @{@"resolution" : widthHeightString};
